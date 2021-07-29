@@ -325,9 +325,9 @@
                     var typed = new Typed("#subtitle", {
                         strings: [ 
                             
-                                "从来没有真正的绝境, 只有心灵的迷途",
+                                "生活模仿艺术远远超过艺术模仿生活。",
                             
-                                "Never really desperate, only the lost of the soul",
+                                "Life imitates art far more than art imitates life.",
                             
                         ],
                         startDelay: 300,
@@ -345,9 +345,7 @@
 
 
 <script>
-    // 每天切换 banner 图.  Switch banner image every day.
-    var bannerUrl = "/medias/banner/" + new Date().getDay() + '.jpg';
-    $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
+    $('.bg-cover').css('background-image', 'url(/medias/banner/0.jpg)');
 </script>
 
 
@@ -376,20 +374,11 @@
                 </a>
                 
                 
-                <a href="/tags/%E4%BD%9C%E5%93%81/" title="作品: 1">
+                <a href="/tags/AE/" title="AE: 2">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            data-tagname="作品" style="background-color: #F5EEF8;">作品
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/tags/AE/" title="AE: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="AE" style="background-color: #D5F5E3;">AE
-                        <span class="tag-length">1</span>
+                            data-tagname="AE" style="background-color: #F5EEF8;">AE
+                        <span class="tag-length">2</span>
                     </span>
                 </a>
                 
@@ -397,7 +386,34 @@
                 <a href="/tags/AE%E5%B7%A5%E7%A8%8B/" title="AE工程: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            data-tagname="AE工程" style="background-color: #E8F8F5;">AE工程
+                            data-tagname="AE工程" style="background-color: #D5F5E3;">AE工程
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/C4D/" title="C4D: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="C4D" style="background-color: #E8F8F5;">C4D
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/%E6%95%99%E7%A8%8B/" title="教程: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="教程" style="background-color: #FEF9E7;">教程
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/%E4%B8%AA%E4%BA%BA%E4%BD%9C%E5%93%81/" title="个人作品: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="个人作品" style="background-color: #F8F9F9;">个人作品
                         <span class="tag-length">1</span>
                     </span>
                 </a>
@@ -426,7 +442,7 @@
 <script type="text/javascript">
     
 
-    $('#tag-wordcloud').jQCloud([{"text":"个人介绍","weight":1,"link":"/tags/个人介绍/"},{"text":"作品","weight":1,"link":"/tags/作品/"},{"text":"AE","weight":1,"link":"/tags/AE/"},{"text":"AE工程","weight":1,"link":"/tags/AE工程/"}], {
+    $('#tag-wordcloud').jQCloud([{"text":"个人介绍","weight":1,"link":"/tags/个人介绍/"},{"text":"AE","weight":2,"link":"/tags/AE/"},{"text":"AE工程","weight":1,"link":"/tags/AE工程/"},{"text":"C4D","weight":1,"link":"/tags/C4D/"},{"text":"教程","weight":1,"link":"/tags/教程/"},{"text":"个人作品","weight":1,"link":"/tags/个人作品/"}], {
         autoResize: true
     });
 </script>

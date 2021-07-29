@@ -325,9 +325,9 @@
                     var typed = new Typed("#subtitle", {
                         strings: [ 
                             
-                                "从来没有真正的绝境, 只有心灵的迷途",
+                                "生活模仿艺术远远超过艺术模仿生活。",
                             
-                                "Never really desperate, only the lost of the soul",
+                                "Life imitates art far more than art imitates life.",
                             
                         ],
                         startDelay: 300,
@@ -345,9 +345,7 @@
 
 
 <script>
-    // 每天切换 banner 图.  Switch banner image every day.
-    var bannerUrl = "/medias/banner/" + new Date().getDay() + '.jpg';
-    $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
+    $('.bg-cover').css('background-image', 'url(/medias/banner/0.jpg)');
 </script>
 
 
@@ -377,19 +375,28 @@
                 </a>
                 
                 
-                <a href="/categories/%E4%BD%9C%E5%93%81/" title="作品: 1">
+                <a href="/categories/AE/" title="AE: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            style="background-color: #F5EEF8;">作品
+                            style="background-color: #F5EEF8;">AE
                         <span class="tag-length">1</span>
                     </span>
                 </a>
                 
                 
-                <a href="/categories/AE/" title="AE: 1">
+                <a href="/categories/%E4%B8%AA%E4%BA%BA%E7%BB%83%E4%B9%A0/" title="个人练习: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            style="background-color: #D5F5E3;">AE
+                            style="background-color: #D5F5E3;">个人练习
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/categories/%E4%B8%AA%E4%BA%BA%E4%BD%9C%E5%93%81/" title="个人作品: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            style="background-color: #E8F8F5;">个人作品
                         <span class="tag-length">1</span>
                     </span>
                 </a>
@@ -437,7 +444,7 @@
                     color: '#3C4858'
                 }
             },
-            indicator: [{"name":"个人介绍","max":2},{"name":"作品","max":2},{"name":"AE","max":2}],
+            indicator: [{"name":"个人介绍","max":2},{"name":"AE","max":2},{"name":"个人练习","max":2},{"name":"个人作品","max":2}],
             nameGap: 5,
             center: ['50%','55%'],
             radius: '66%'
@@ -448,7 +455,7 @@
             itemStyle: {normal: {areaStyle: {type: 'default'}}},
             data : [
                 {
-                    value : [1,1,1],
+                    value : [1,1,1,1],
                     name : '文章分类数量'
                 }
             ]
