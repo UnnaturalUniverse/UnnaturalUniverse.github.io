@@ -4,6 +4,29 @@
   
     
     <entry>
+      <title>AE学习个人笔记</title>
+      <link href="/2021/07/29/AE%E5%AD%A6%E4%B9%A0%E4%B8%AA%E4%BA%BA%E7%AC%94%E8%AE%B0/"/>
+      <url>/2021/07/29/AE%E5%AD%A6%E4%B9%A0%E4%B8%AA%E4%BA%BA%E7%AC%94%E8%AE%B0/</url>
+      
+        <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>自己Onenote上的笔记，比较杂。网站上传图片太不方便了，所以直接用图片的形式展示笔记，表打我QAQ</p><h2 id="一边看教程一边做的笔记"><a href="#一边看教程一边做的笔记" class="headerlink" title="一边看教程一边做的笔记"></a>一边看教程一边做的笔记</h2><p>教程是motiondesignschool的LOGO课</p><p><img src="/images/%E7%AC%94%E8%AE%B01.png" alt="笔记1"></p><p>B站上看的一些教程的笔记</p><p><img src="/images/%E7%AC%94%E8%AE%B02.png" alt="笔记1"></p><p>Motion Science课的笔记</p><p><img src="/images/%E7%AC%94%E8%AE%B03.png" alt="笔记1"></p><h3 id="动画十二法则"><a href="#动画十二法则" class="headerlink" title="动画十二法则"></a>动画十二法则</h3><p>1.挤压和伸展<br>2.预备动作<br>3.演出方式<br>4.连续动作与关键动作<br>5.跟随动作与重叠动作<br>6.渐快与渐慢<br>7.弧形<br>8.附属动作<br>9.时间控制<br>10.夸张<br>11.纯熟的手绘技巧<br>12.吸引力</p><p>思路：起、承、转、合<br>分镜快慢快慢</p><h3 id="人物飘动技巧"><a href="#人物飘动技巧" class="headerlink" title="人物飘动技巧"></a>人物飘动技巧</h3><p>头发飘动：每隔一秒朝一个方向飘动<br>头发从上向下飘动幅度依次增大<br>头发图钉依次向下 每个图钉的关键帧隔两帧<br> loopOut(“cycle”)<br>眨眼：闭眼三帧 睁眼5帧</p><h3 id="表达式相关"><a href="#表达式相关" class="headerlink" title="表达式相关"></a>表达式相关</h3><p>thisComp.layer(“Solid 1”).transform.opacity<br>读取哪一个Comp  读取哪一个图层  读取哪一个属性<br>thisComp:读取当下图层<br>comp(“Comp名称”) 读取某个指定Comp<br>layer(“layer名称”)读取某个指定图层<br>transform.XXXX 读取变形的指定属性<br>effect(“特效名称”)(“属性名称”)  连接特效语法<br>循环表达式<br>loopOut(“cycle”) 重复播放动画<br>loopOut(“pingpong”) 动画播完后倒转播放<br>loopOut(“offset”) 维持动画曲线 往后继续进行<br>loopOut(“continue”)  维持最后一帧的速度<br>random(-600,600) -600到600之间跳动<br>random(600) 0到600之间跳动<br>linear(time,0,2,0,100)<br>（动画控制器，开始动画的值，结束动画的值 ，动画最小值，动画最大值）<br>正弦函数表达式Math.sin(time)<em>100<br>2s一个周期 Math.sin(time</em>Math.PI)<em>100<br>1s一个周期Math.sin(time</em>Math.PI*2)<em>100<br>位置属性：[value[0],value[1] + Math.sin(time</em>2)<em>100]<br>Math.round(value) 四舍五入<br>Math.floor(value) 去掉小数点<br>Math.ceil(value) 无条件进位<br>if(effect(“Wiggle On”)(“Checkbox”)==1) {wiggle(5,30)}else{value}<br>如果Checkbox效果开启，则执行wiggle<br>if（某个条件）{符合条件就执行的指令}else{不符合的话执行的指令}<br>“Rotation=”+transform.rotation.value<br>旋转属性转换为文字<br>$.evalFile(“I:/test.txt”)<br>读取文件<br>颜色K帧 thisComp.layer(“Background”).sampleImage(transform.position)<br>画面取样<br>thisComp.layer(“Solid 1”).transform.opacity.valueAtTime(time-0.5)<br>比链接动画开始慢0.5s<br>案例：thisComp.layer(“Solid 1”).transform.opacity.valueAtTime(time-index</em>0.2)<br> 案例：随机变化<br>添加4个滑块控制<br>animation control<br>xRandom<br>yRandom</p><p>位置表达式control=effect(“Animation control”)(“slider”)<br>xRandom=<br>yRandom=<br>seedRandom(effect(“Random Seed”)(“Slider”),true);</p><p>value+[random(-xRandom,xRandom),random(-yRandom,yRandom)]*control</p><h3 id="脚本推荐"><a href="#脚本推荐" class="headerlink" title="脚本推荐"></a>脚本推荐</h3><p>Rift 做时间差<br>Keyboard<br>gifgun AE直接输出Gif图<br>explode shape layers<br>AutoSway<br>Yan-K purge 清除内存<br>Yan-K RanAni 随机动画</p><h3 id="无版权音效音乐"><a href="#无版权音效音乐" class="headerlink" title="无版权音效音乐"></a>无版权音效音乐</h3><p>魔王魂<br>炼狱庭园<br>Royalty Free Music<br>No Copyright Sound</p><h2 id="拆工程做的一些笔记"><a href="#拆工程做的一些笔记" class="headerlink" title="拆工程做的一些笔记"></a>拆工程做的一些笔记</h2><h3 id="动效周期表"><a href="#动效周期表" class="headerlink" title="动效周期表"></a>动效周期表</h3><p>噪点：将“ effect” /“ noise＆grain” /“ 杂色 alpha”应用于图层。</p><p>阴影：1. 预合成要添加阴影的图像并复制图层。<br>2.在下面的图层上设置“效果” /“过渡” /“ CC缩放擦除”。- CC ScaleWipe<br>“ Stretch – 拉伸”的值拉到最大。“Direction – 方向”确定阴影的方向。</p><p>电视墙：将“ Effect” /“ Distortion” /“ CC Tiler”应用于图层。</p><p>弯曲：<br>将“效果” /“变形” /“ CC Bend it”应用到图层。</p><p>波形变形：将“效果” /“扭曲” /“波形变形”应用于图层。</p><p>中间值：<br>1.在图层上应用“效果” /“杂色和颗粒” /“ 中间值”。<br>然后，请检查Alpha通道中的执行情况。</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> AE </tag>
+            
+            <tag> AE学习 </tag>
+            
+            <tag> AE教程 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>一些个人的练习</title>
       <link href="/2021/07/29/%E4%B8%80%E4%BA%9B%E4%B8%AA%E4%BA%BA%E7%9A%84%E7%BB%83%E4%B9%A0/"/>
       <url>/2021/07/29/%E4%B8%80%E4%BA%9B%E4%B8%AA%E4%BA%BA%E7%9A%84%E7%BB%83%E4%B9%A0/</url>
